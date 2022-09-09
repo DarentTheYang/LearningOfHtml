@@ -1,0 +1,22 @@
+<!-- 本节练习插入图片 -->
+<html>
+    <body>
+        <!-- 相同文件夹下的图片索引 -->
+        <img src="./image.jpg" alt="本图片无法显示！">
+
+        <!-- 下一级文件夹的图片索引 -->
+        <img src="./src/image.jpg" alt="本图片无法显示！">
+
+        <!-- alt指的是当图片无法显示时，取而代之的文字。 -->
+
+        <!-- img与map、area的联用 -->
+        <!-- map、area用于一张图片的多次重定向。把一张图片分成多个区域，
+        分区域给予超链接。 -->
+        <img src="./image.jpg" alt="此图片无法显示！" usemap="#example">
+        <map name="example">
+            <area shape="rect" coords="0,0,50,50" href="http://www.baidu.com" alt="此链接无效">
+            <area shape="rect" coords="50,50,100,100" href="http://www.qq.com" alt="此链接无效">
+        </map>
+
+    </body>
+</html>
