@@ -1,0 +1,44 @@
+<!-- 本节学习类的定义 -->
+
+<!-- 类可以对元素进行分类，然后对某一类做相同的修饰，这个可以与CSS一起使用。 -->
+<html>
+    <head>
+        <!-- 先对块级元素分类。 -->
+        <style>
+            /* style下的注释是这样的，与其他地方不同。 */
+            /* 注意定义class的方法，是在head->style中，且用点作为开头。 */
+            .xibao{
+                background-color: red;
+                color: yellow;
+                margin: 200px;
+                padding: 80px;
+            }
+            .ribao{
+                background-color: gray;
+                color: black;
+                margin: 200px;
+                padding: 100px;
+            }
+
+        /* 对行内元素的分类。行内类的定义以span开头。 */
+            span.aquaman{
+                color: aqua
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 类应用于块级元素 -->
+        <div class="xibao">
+            <h1 style="text-align: center;">喜报</h1>
+            <p style="text-align: center; font-size: 50px;">笑喜了</p>
+        </div>
+        <div class="ribao">
+            <h2 style="text-align: center">红酒报</h2>
+            <p style="text-align: center">烛骑士和她的99个男仆.jpg</p>
+        </div>
+
+        <!-- 类应用于行内元素 -->
+        <p >他就是<span class="aquaman">海王</span>！</p>
+
+    </body>
+</html>
