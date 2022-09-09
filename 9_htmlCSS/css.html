@@ -1,0 +1,32 @@
+<!-- 这一节学习简单的CSS样式表的用法。 -->
+
+<html>
+    <!-- 在head中规定全局样式。 -->
+    <head>
+        <!-- 这样的一块style叫做样式表。样式表分为内部样式表、外部样式表和内联样式。 -->
+        
+        <!-- 内部样式表 -->
+        <!-- 像这样在html文件中直接规定样式就叫做内部样式表。 -->
+        <style type="text/css">
+            h1 {color:red}
+            p {color:blue}
+        </style>
+
+        <!-- 外部样式表 -->
+        <!-- 外部样式表由一个独立的css文件规定，这里只写入注释中作为展示使用。 -->
+<!-- 
+    <head>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+ -->
+    </head>
+
+    <body>
+        <h1>这是经过调整的标题样式。</h1>
+        <p>这是经过调整的段落文字样式。</p>
+
+    <!-- 当某元素需要不同于全局样式的新样式，可以使用内联样式。 -->
+    <p style="color:red; margin-left:20px ">内联样式。</p>
+
+    </body>
+</html>
