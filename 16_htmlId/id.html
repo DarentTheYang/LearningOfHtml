@@ -1,0 +1,57 @@
+<!-- 这节学习id -->
+
+<!-- id用来唯一标记元素。id不能重复，但对大小写敏感，且不能包括空白字符。 -->
+<html>
+    <head>
+        <style>
+            /* 对类的修饰使用#开头，与对类的修饰以.开头是不同的。 */            
+            #idtry {
+                background-color: aqua;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+            .classtry {
+                background-color: red;
+                font-size: 40px;
+                color: yellow;
+                padding: 100px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="idtry">
+            Header
+        </h1>
+
+        <!-- id与类的不同：类能够修饰多个元素，而id是不能重复的。 -->
+        <div class="classtry">
+            <h1>喜报1</h1>
+            <p>笑喜了1</p>
+        </div>
+        <br />
+        <div class="classtry">
+            <h1>喜报2</h1>
+            <p>笑喜了2</p>
+        </div>
+        <br />
+        <div class="classtry">
+            <h1>喜报3</h1>
+            <p>笑喜了3</p>
+        </div>
+        <br />
+        <div class="classtry">
+            <h1>喜报4</h1>
+            <p>笑喜了4</p>
+        </div>
+        <br />
+        <div class="classtry">
+            <h1>喜报5</h1>
+            <p>笑喜了5</p>
+        </div>
+        
+        <!-- id可以作为页面太长时，跳转用的书签 -->
+        <a href="#idtry">点击此处跳转到header</a>
+    </body>
+</html>
