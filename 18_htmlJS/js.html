@@ -1,0 +1,41 @@
+<!-- 本节学习Javascript的简单使用 -->
+
+
+<html>
+    <head>
+        <script>
+            document.getElementById('demo2').innerHTML = "Hello JS";
+        </script>
+        <!-- noscript标签会在浏览器不支持js时自动替换。（写在head中） -->
+        <noscript>
+            您的浏览器不支持javascript
+        </noscript>
+    </head>
+    <body>
+        <h1>看看时间？</h1>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">点我看时间
+        </button>
+        <!-- 这里创建了一个id为demo的空元素，在点击按钮后，将当前日期替换进这个空元素。 -->
+        <p id="demo"></p>
+
+        <!-- 可以写入脚本的script标签 -->
+        <!-- script脚本既可以写在内部，也可以通过src属性从外部引入.js文件。 -->
+        <!-- 图像处理、表单验证、动态更改页面内容是JavaScript最常用的功能。 -->
+        
+        <!-- JavaScript需要选取html元素并对其修改时，用document.getElementById()方法。 -->
+        <p id="demo2"></p>     
+        
+        <!-- 
+                除了上面那些，这些用来更改样式的语句也是可以用的。
+            document.getElementById("demo").style.fontSize = "25px";
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.backgroundColor = "yellow";
+
+                还有用来更改属性的。
+            document.getElementById('image').src = "picture.gif";
+
+                无一例外，这些都要写在script中。
+         -->
+    </body>
+</html>
