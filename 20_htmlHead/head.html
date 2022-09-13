@@ -1,0 +1,60 @@
+<!-- 本节学习头部元素 -->
+
+<!-- 
+    头部元素有很多种，列表如下：
+    title ：定义文档标题
+    base  ：定义页面上所有链接的默认地址或默认目标
+    link  ：定义文档与外部资源之间的关系
+    meta  ：定义关于html文档的元数据
+    script：定义客户端脚本（js相关）
+    style ：定义文档样式信息
+ -->
+
+<html>
+    <head>
+        <!-- title可以定义：
+            1.网页在浏览器标签栏的名字
+            2.添加书签时的名字
+            3.显示在搜索引擎中的页面标题
+         -->
+        <title>在这里定义标题</title>
+
+        <!-- base规定了页面上所有链接的默认地址或目标。 -->
+        <!-- 首先要注意base的写法，要在同个标签内将其关闭。 -->
+        <base href="https://www.w3school.com.cn/images/" />
+
+        <!-- 在这里规定target为blank，那么即使在正文中的跳转链接不加上这句话，
+            也会在新窗口中打开。 -->
+        <base target="_blank" />
+
+        <!-- link定义文档与外部资源之间的关系 -->
+        <link rel="stylesheet" href="text/css" href="mystyle.css">
+
+        <!-- style规定了类/元素的格式，这个之前讲过 -->
+        <style>
+            .sy{
+                background-color: red;
+                color: yellow;
+                text-align: center;
+                font-size: 50px;
+            }
+        </style>
+
+        <!-- meta元素提供关于html文档的元数据，是用户不可见的，但是浏览器可读。 -->
+        <!-- 元数据一般是结构化的数据（例如数据库里定义了各种形式的数据），本质也是数据 -->
+        <!-- 注意meta的写法。 -->
+        
+        <!-- 对页面描述的meta元素 -->
+        <meta name="description" content="本页面为免费提供" />
+
+        <!-- 定义页面关键词的meta元素 -->
+        <meta name="keywords" content="免费">
+    </head>
+
+        <!-- script以后会讲。 -->
+        <script></script>
+
+    <body>
+        
+    </body>
+</html>
