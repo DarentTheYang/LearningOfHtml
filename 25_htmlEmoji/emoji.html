@@ -1,0 +1,20 @@
+<!-- 本节学习emoji的使用和编码介绍 -->
+
+<!-- emoji本质上是一种字符，但它并不存在于所有的字符集中，所以需要告知浏览器本页面使用的编码。 -->
+<html>
+    <head>
+        <!-- 告诉浏览器，这里使用的是UTF-8字符集。其实HTML默认也使用UTF-8字符集。 -->
+        <meta charset="UTF-8">
+        <style>
+            .emoji{
+                font-size: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>显示普通字符A B C</p>
+        <p>使用字符实体显示&#65; &#66; &#67;</p>
+        <p>显示emoji并调大</p>
+        <p class="emoji">&#128517</p>
+    </body>
+</html>
