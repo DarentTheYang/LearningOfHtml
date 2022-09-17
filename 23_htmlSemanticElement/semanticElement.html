@@ -1,0 +1,92 @@
+<!-- 这节学习语义元素 -->
+
+<!-- HTML中某些标签会指明本标签所代表的类型，例如img、form、table等。这些就属于含有语义的元素。 -->
+<!-- div、span这种不带有语义的元素与语义元素是不同的。 -->
+
+<!-- HTML所能使用的语义元素：
+    <article>   文章
+    <aside>     侧边说明
+    <details>   用户能够查看或隐藏的额外细节
+    <figcaption>图注的一部分
+    <figure>    图注
+    <footer>    页脚
+    <header>    页眉
+    <main>      文档的主要内容
+    <mark>      强调文本
+    <nav>       导航栏
+    <section>   节
+    <summary>   定义details元素的可见标题
+    <time>      时间
+-->
+
+<html>
+    <head>
+        <style>
+            .yemei{
+                text-align: center;
+                background-color: red;
+                color: yellow;
+                font-size: 50px;
+                padding: 50px;
+                margin: 12px;
+            }
+            .daohang{
+                float: left;
+                background-color: yellow;
+                height: 380px;
+                padding: 10px;
+                margin: 10px;
+                font: 25px;
+        }
+            .xiaobiaoti{
+                float: left;
+                background-color: yellow;
+                height: 100px;
+                width: 600px;
+                padding: 10px;
+                margin: 10px;
+                font: 25px;
+            }
+            .neirong{
+                float: left;
+                background-color: yellow;
+                height: 100px;
+                width: 600px;
+                padding: 10px;
+                margin: 10px;
+                font: 25px;
+            }
+            .yejiao{
+                float: left;
+                background-color: yellow;
+                height: 100px;
+                width: 600px;
+                padding: 10px;
+                margin: 10px;
+                font: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="yemei">这是标题（页眉）</header>
+        <nav class="daohang">
+            导航栏
+            <a href="金坷垃MK.I">金坷垃MK.I</a> <br />
+            <a href="金坷垃MK.II">金坷垃MK.II</a> <br />
+            <a href="金坷垃旗舰版">金坷垃旗舰版</a> <br />
+            <a href="导演剪辑版">金坷垃宣传片导演剪辑版</a> <br />
+        </nav>
+
+        <section class="xiaobiaoti">金坷垃简介</section>
+        <article class="neirong">金克拉是由圣地亚哥公司出品的肥料添加剂</article>
+        <footer class="yejiao">这是页脚</footer>
+
+        <!-- 带图注的图片 -->
+        <figure>
+            <img src="picture.jpg" alt="该图片无法显示" height="500px">
+            <figcaption>
+                Fig.1 Rosa
+            </figcaption>
+        </figure>
+    </body>
+</html>
