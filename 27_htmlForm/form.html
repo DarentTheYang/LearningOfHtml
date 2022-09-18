@@ -1,0 +1,52 @@
+<!-- 本节学习html表单 -->
+
+<!-- 表单form是指收集用户输入的html元素。收集的方式多种多样，例如：文字输入、下拉输入、提供选项等。 -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <form>
+                <!-- 输入框的默认宽度是20个字符 -->
+                输入框 <br />
+                firstName:<br />
+                <input type="text" name="firstName">
+                <br />
+                lastName: <br />
+                <input type="text" name="lastName">
+            </form>
+        </div>
+        <hr />
+        <div>
+            选项
+            <form>
+                <input type="radio" name="sex" value="male">
+                male <br />
+                <input type="radio" name="sex" value="female">
+                female <br />
+            </form>
+        </div>
+        <hr />
+        <div>
+            带有submit按钮的输入框： <br />
+            <form>
+                <!-- 带有submit的输入框 -->
+                输入框 <br />
+                firstName:<br />
+                <input type="text" name="firstName">
+                <br />
+                lastName: <br />
+                <input type="text" name="lastName">
+                <br /><br />
+                <input type="submit">
+            </form>
+        </div>
+        <hr />
+        <!-- 可以使用action属性来处理表单提交的信息，action是form的属性。这里就先不演示了。 -->
+        <!-- http在页面提交表单时的方法(method)有两种，GET和POST，同样是form的属性，和action联用。 -->
+        <!-- GET可以在没有敏感信息时使用，它会显示在输入框中。POST则不会显示出来，POST比GET安全一些。 -->
+        <!-- GET只能接受少量输入，浏览器会限制这个数量。 -->
+        <!-- 必须对每一个input元素指定name，才能正确处理提交的数据。 -->
+        <!-- fieldset元素可以整合表单中的内容。必须包含需要整合的所有元素。 -->
+        <!-- legend元素可以给field元素命名。只要在被包含在fieldset中即可。 -->
+    </body>
+</html>
